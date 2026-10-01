@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المهندس مينا خيرت- فريش</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #f5f5f5;
+            line-height: 1.6;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, rgba(255, 0, 0, 0.9) 0%, rgba(204, 0, 0, 0.9) 100%), 
+                        url('https://raw.githubusercontent.com/Minakhairat/fresh-employees/refs/heads/main/Fresh_Electric%20(1).jpg');
+            background-size: cover;
+            background-position: center;
+            background-blend-mode: overlay;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(255, 0, 0, 0.8);
+            z-index: 1;
+        }
+        
+        .header-content {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .employee-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid white;
+            margin-bottom: 15px;
+            object-fit: cover;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+        
+        .employee-name {
+            font-size: 28px;
+            margin-bottom: 5px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        
+        .employee-code {
+            font-size: 18px;
+            opacity: 0.9;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border-right: 4px solid #FF0000;
+        }
+        
+        .card h2 {
+            color: #FF0000;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #FF0000;
+            padding-bottom: 10px;
+        }
+        
+        .skills-list, .certificates-list, .courses-list {
+            list-style: none;
+        }
+        
+        .skills-list li, .certificates-list li, .courses-list li {
+            background: #f8f9fa;
+            margin-bottom: 8px;
+            padding: 10px 15px;
+            border-radius: 5px;
+            border-right: 4px solid #FF0000;
+            transition: all 0.3s ease;
+        }
+        
+        .skills-list li:hover, .certificates-list li:hover, .courses-list li:hover {
+            background: #ffe6e6;
+            transform: translateX(-5px);
+        }
+        
+        .professional-level {
+            display: inline-block;
+            background: #FF0000;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+        
+        .back-btn {
+            display: inline-block;
+            background: #FF0000;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .back-btn:hover {
+            background: #CC0000;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(255, 0, 0, 0.3);
+        }
+
+        .info-item {
+            margin-bottom: 10px;
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .info-item strong {
+            color: #FF0000;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header-content">
+            <img src="https://raw.githubusercontent.com/Minakhairat/fresh-employees/main/assets/images/employees/42946.jpg" 
+                 alt="مينا خيرت" 
+                 class="employee-photo">
+            <h1 class="employee-name">مينا خيرت شوقي كامل</h1>
+            <p class="employee-code">الكود: 42946</p>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="card">
+            <h2>📊 المعلومات الأساسية</h2>
+            <div class="info-item"><strong>القسم:</strong> إدارة العمليات</div>
+            <div class="info-item"><strong>الوظيفة:</strong> مدير إدارة العمليات</div>
+            <div class="info-item"><strong>تاريخ التعيين:</strong> ١٠/٠٣/٢٠٢٢</div>
+        </div>
+        
+        <div class="card">
+            <h2>🛠️ المهارات الفنية</h2>
+            <ul class="skills-list">
+                <li>إدارة وتخطيط العمليات الإنتاجية</li>
+                <li>تحسين كفاءة خطوط الإنتاج</li>
+                <li>إدارة فرق العمل (٣٠٠ عامل)</li>
+                <li>مراقبة الجودة والشهادة</li>
+                <li>تطوير نظم العمل والإجراءات</li>
+            </ul>
+        </div>
+        
+        <div class="card">
+            <h2>📜 الشهادات</h2>
+            <ul class="certificates-list">
+                <li>شهادة إدارة العمليات والإنتاج - ٢٠٢١</li>
+                <li>شهادة السلامة والصحة المهنية - ٢٠٢٢</li>
+                <li>شهادة الجودة في التصنيع - ٢٠٢٣</li>
+                <li>شهادة إدارة الجودة الشاملة - ٢٠٢٤</li>
+            </ul>
+        </div>
+        
+        <div class="card">
+            <h2>🎓 الكورسات والدورات</h2>
+            <ul class="courses-list">
+                <li>دورة القيادة الإدارية المتقدمة - ٦٠ ساعة</li>
+                <li>دورة إدارة الجودة في المصانع - ٤٠ ساعة</li>
+                <li>ورشة تحسين كفاءة الطاقة في التصنيع - ٣٠ ساعة</li>
+                <li>برنامج إدارة سلاسل التوريد - ٥٠ ساعة</li>
+            </ul>
+        </div>
+        
+        <div class="card">
+            <h2>📈 المستوى المهني</h2>
+            <p>المستوى الحالي: <span class="professional-level">مدير إدارة</span></p>
+            <p>التقييم الأخير: ⭐⭐⭐⭐⭐ (٥/٥)</p>
+            <p>آخر ترقية: يناير ٢٠٢٤</p>
+        </div>
+        
+        <button onclick="window.location.href='../index.html'" class="back-btn">← العودة للصفحة الرئيسية</button>
+    </div>
+</body>
+</html>
